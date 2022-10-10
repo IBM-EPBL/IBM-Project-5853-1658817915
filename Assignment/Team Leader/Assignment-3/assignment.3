@@ -1,0 +1,36 @@
+GPIO.setmode(GPIO.BCM)
+GREEN_LED = 18
+RED_LED = 23
+GPIO.setup(GREEN_LED, GPIO.OUT)
+GPIO.setup(RED_LED, GPIO.OUT)
+
+# Time in ms between blinks
+BLINK_DELAY = 0.4
+
+# Temp vars for loop state
+counter = 1
+green_state = True
+
+# How many blinks? 1 for every ten minutes of the current time (1 - 5 blinks)
+times_to_blink = datetime.datetime.now().minute / 10
+
+# Blink LED-s!
+while counter <= times_to_blink:
+    print "Blink %d of %d!" % (counter, times_to_blink)
+    
+    # Switch LED states
+    GPIO.output(GREEN_LED, green_state)
+    GPIO.output(RED_LED, not green_state)
+    
+    # Save new states
+    green_state = not green_state
+    counter += 1
+    
+    # Wait...    
+    time.sleep(BLINK_DELAY)
+
+print "Done!"
+
+# Switch the LED-s off when done
+GPIO.output(GREEN_LED, False)
+GPIO.output(RED_LED, False)
