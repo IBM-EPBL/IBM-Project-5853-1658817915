@@ -1,1 +1,170 @@
-new
+{
+  "_id": "nodered/flow",
+  "_rev": "13-372a9592e0acab3988b0f641f3480e30",
+  "flow": [
+    {
+      "id": "be1b02b408c994c4",
+      "type": "tab",
+      "label": "Flow 1",
+      "disabled": false,
+      "info": "",
+      "env": []
+    },
+    {
+      "id": "0b2372b5ca2466b8",
+      "type": "ibmiot",
+      "name": "",
+      "keepalive": "60",
+      "serverName": "",
+      "cleansession": true,
+      "appId": "",
+      "shared": false
+    },
+    {
+      "id": "81668899cbeecc5a",
+      "type": "ibmiot",
+      "name": "",
+      "keepalive": "60",
+      "serverName": "",
+      "cleansession": true,
+      "appId": "",
+      "shared": false
+    },
+    {
+      "id": "44d6f6e6af33ddd3",
+      "type": "ibmiot",
+      "name": "",
+      "keepalive": "60",
+      "serverName": "",
+      "cleansession": true,
+      "appId": "",
+      "shared": false
+    },
+    {
+      "id": "96aaffa9e042c01c",
+      "type": "ui_tab",
+      "name": "Home",
+      "icon": "dashboard",
+      "disabled": false,
+      "hidden": false
+    },
+    {
+      "id": "7556a14dfa36364f",
+      "type": "ui_base",
+      "theme": {
+        "name": "theme-light",
+        "lightTheme": {
+          "default": "#0094CE",
+          "baseColor": "#0094CE",
+          "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+          "edited": false
+        },
+        "darkTheme": {
+          "default": "#097479",
+          "baseColor": "#097479",
+          "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+          "edited": false
+        },
+        "customTheme": {
+          "name": "Untitled Theme 1",
+          "default": "#4B7930",
+          "baseColor": "#4B7930",
+          "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+        },
+        "themeState": {
+          "base-color": {
+            "default": "#0094CE",
+            "value": "#0094CE",
+            "edited": false
+          },
+          "page-titlebar-backgroundColor": {
+            "value": "#0094CE",
+            "edited": false
+          },
+          "page-backgroundColor": {
+            "value": "#fafafa",
+            "edited": false
+          },
+          "page-sidebar-backgroundColor": {
+            "value": "#ffffff",
+            "edited": false
+          },
+          "group-textColor": {
+            "value": "#1bbfff",
+            "edited": false
+          },
+          "group-borderColor": {
+            "value": "#ffffff",
+            "edited": false
+          },
+          "group-backgroundColor": {
+            "value": "#ffffff",
+            "edited": false
+          },
+          "widget-textColor": {
+            "value": "#111111",
+            "edited": false
+          },
+          "widget-backgroundColor": {
+            "value": "#0094ce",
+            "edited": false
+          },
+          "widget-borderColor": {
+            "value": "#ffffff",
+            "edited": false
+          },
+          "base-font": {
+            "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+          }
+        },
+        "angularTheme": {
+          "primary": "indigo",
+          "accents": "blue",
+          "warn": "red",
+          "background": "grey",
+          "palette": "light"
+        }
+      },
+      "site": {
+        "name": "Node-RED Dashboard",
+        "hideToolbar": "false",
+        "allowSwipe": "false",
+        "lockMenu": "false",
+        "allowTempTheme": "true",
+        "dateFormat": "DD/MM/YYYY",
+        "sizes": {
+          "sx": 48,
+          "sy": 48,
+          "gx": 6,
+          "gy": 6,
+          "cx": 6,
+          "cy": 6,
+          "px": 0,
+          "py": 0
+        }
+      }
+    },
+    {
+      "id": "cf986ce8da190c64",
+      "type": "ui_group",
+      "name": "Monitoring",
+      "tab": "96aaffa9e042c01c",
+      "order": 1,
+      "disp": true,
+      "width": "6",
+      "collapse": false,
+      "className": ""
+    },
+    {
+      "id": "c009eb5eb1eba342",
+      "type": "ui_group",
+      "name": "Weather Monitoring",
+      "tab": "96aaffa9e042c01c",
+      "order": 2,
+      "disp": true,
+      "width": "6",
+      "collapse": false,
+      "className": ""
+    }
+  ]
+}
